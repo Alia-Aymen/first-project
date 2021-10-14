@@ -11,18 +11,51 @@
         <a href="#contact">Contact us</a>
         <a href="#about">About us</a>
         <input type="text" placeholder="Search..">
-        <button class="Btn">Sign up</button>
+        <button onclick="document.getElementById('Btn').style.display='block'" style="width:auto;">Sign Up</button>
       </div>
- <div>
-    
-
-
-
-
-
-    
- </div>
-
-  
+ <div class="container2" >
+    <div>
+     <h1>Water needs</h1>
+     <form >
+       <input type="checkbox" class="an"  >
+       <label for="an1"> low</label><br>
+       <input type="checkbox" class="an"   >
+       <label for="an2"> average</label><br>
+       <input type="checkbox" class="an"   >
+       <label for="an3"> height</label><br><br>
+     </form>  
+     <h1>Leight levels</h1>
+     <form >
+       <input type="checkbox" class="an" >
+       <label for="an1"> Full sun</label><br>
+       <input type="checkbox" class="an" >
+       <label for="an2"> Parcial sun</label><br>
+       <input type="checkbox" class="an" >
+       <label for="an3"> Shade</label><br><br>
+     </form>  
+     <h1>Maintenance needs</h1>
+     <form >
+       <input type="checkbox" class="an" >
+       <label for="an1"> low</label><br>
+       <input type="checkbox" class="an" >
+       <label for="an2"> average</label><br>
+       <input type="checkbox" class="an" >
+       <label for="an3"> height</label><br><br>
+     </form>  
+     <h1>Plants Type</h1>
+     <form >
+       <input type="checkbox" class="an">
+       <label for="an1"> Cactus-Succulente</label><br>
+       <input type="checkbox" class="an">
+       <label for="an2"> Roses</label><br>
+       <input type="checkbox" class="an">
+       <label for="an3"> Ornamental grasses</label><br>
+       <input type="checkbox" class="an">
+       <label for="an3"> Bamboos</label><br><br>
+     </form>      
+    </div>
+    <input type="submit" id="sub" value="Submit">
+       <button type="button"  onclick="refresh()"> refresh</button>
+     </div>
 </body>
 </html>

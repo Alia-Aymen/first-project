@@ -1,5 +1,7 @@
 body{
-    background-image: url(./16144096.jpg);
+    background-image: url(./images/backgr.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 .topnav {
@@ -39,18 +41,24 @@ body{
     font-family: Verdana, Arial, Helvetica, sans-serif;
     width: 10%
   }
-.Btn{
- float: right;
- padding: 6px;
- border: none;
- margin-top: 8px;
- margin-right: 16px;
- font-size: 20px;
- font-family: Verdana, Arial, Helvetica, sans-serif;
- cursor:pointer;
- background-color:rgb(51, 51, 51);
- color: #f2f2f2
+
+button {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 20px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  cursor:pointer;
+  background-color:rgb(51, 51, 51);
+  color: #f2f2f2
 }
+
+button:hover {
+  opacity:1;
+}
+
 input[type=text], input[type=password] {
     width: 50%;
     padding: 15px;
@@ -58,25 +66,20 @@ input[type=text], input[type=password] {
     display: inline-block;
     border: none;
     background: #f1f1f1;
+    font-family: Verdana, Arial, Helvetica, sans-serif
   }
   
   /* Add a background color when the inputs get focus */
   input[type=text]:focus, input[type=password]:focus {
     background-color: #ddd;
     outline: none;
-  }
-  
-  
-  /* Extra styles for the cancel button */
-  .cancelbtn {
-    padding: 14px 20px;
-    background-color: #f44336;
+    font-family: Verdana, Arial, Helvetica, sans-serif
   }
   
   /* Float cancel and signup buttons and add an equal width */
   .cancelbtn, .signupbtn {
-    float: left;
-    width: 50%;
+    float:inherit;
+    width: 20%;
   }
   
   /* Add padding to container elements */
@@ -86,24 +89,29 @@ input[type=text], input[type=password] {
   
   /* The Modal (background) */
   .modal {
-    display: none; /* Hidden by default */
+    background-image:url(./images/backgr.jpg);
+    display:none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     left: 0;
     top: 0;
-    width: 50%; /* Full width */
-    height: 50%; /* Full height */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: #474e5d;
+    background-color:#f1f1f1;
     padding-top: 50px;
+  
   }
   
   /* Modal Content/Box */
   .modal-content {
-    background-color: #fefefe;
+    background-color:rgb(247, 229, 247);
     margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-    border: 1px solid #888;
-    width: 50%; /* Could be more or less, depending on screen size */
+    border:transparent;
+    border-radius: 5%;
+    width: 50%; 
+  font-size: 20px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;/* Could be more or less, depending on screen size */
   }
   
   /* Style the horizontal ruler */
@@ -117,12 +125,12 @@ input[type=text], input[type=password] {
     position: absolute;
     right: 35px;
     top: 15px;
-    font-size: 40px;
+    font-size: 20px;
     font-weight: bold;
     color: #f1f1f1;
   }
   
-  .close:hover,
+  /*.close:hover,
   .close:focus {
     color: #f44336;
     cursor: pointer;
@@ -134,6 +142,54 @@ input[type=text], input[type=password] {
     clear: both;
     display: table;
   }
+
+#div1{
+  display:flexbox;
+  float:right;
+  width:150px;
+	height:150px;
+}
+
+#giif{
+  float: right;
+  width: 40%;
+  padding-right: 50px ;
+  padding-top: 50px;
+  border-radius: 10%;
+}
+
+#p1{
+  float: right;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  width: 50%;
+  height: 10%;
+  margin-right: 10px;
+}
+/* #p1{
+height: 10%;
+width: 50%;
+color: rgb(0, 0, 0);
+float:right;
+font-size: 30px;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+padding-top: 45%;
+padding-right: 100px;
+font-size: 20px;
+font-weight: bold;
+
+} */
+
+.container2 {
+  background-color:rgb(247, 229, 247);
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border:transparent;
+  border-radius: 5%;
+  width: 50%;
+  text-align:justify;
+  padding-right: 20px;
+  font-size: 20px;
+  font-family: Verdana, Arial, Helvetica, sans-serif; 
+}
   
   /* Change styles for cancel button and signup button on extra small screens */
   @media screen and (max-width: 300px) {
