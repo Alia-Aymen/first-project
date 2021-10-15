@@ -5,57 +5,233 @@
 <title>Page Title</title>
 </head>
 <body>
-    <div class="topnav">
-        <a class="active" href="./index.html">Home</a>
+  <div class="topnav">
+    <a class="active" href="./index.html">Home</a>
         <a href="#news">Choose Your Plants</a>
         <a href="#contact">Contact us</a>
         <a href="#about">About us</a>
         <input type="text" placeholder="Search..">
         <button onclick="document.getElementById('Btn').style.display='block'" style="width:auto;">Sign Up</button>
       </div>
- <div class="container2" >
-    <div>
-     <h1>Water needs</h1>
+      <div class="container2" >
+  
+     <h1>Choose your type</h1>
      <form >
-       <input type="checkbox" class="an"  >
-       <label for="an1"> low</label><br>
-       <input type="checkbox" class="an"   >
-       <label for="an2"> average</label><br>
-       <input type="checkbox" class="an"   >
-       <label for="an3"> height</label><br><br>
+       <input type="checkbox" class="flower" value="with" >
+       <label for="an1"> Cactus</label><br>
+       <input type="checkbox" class="flower" value="without" >
+       <label for="an2"> Orchids</label><br>
+       <input type="checkbox" class="flower" value="without" >
+       <label for="an2"> Interior Plants</label><br>
+       <input type="checkbox" class="flower" value="without" >
+       <label for="an2"> With Flowers Plants </label><br>
+       <input type="checkbox" class="flower" value="without" >
+       <label for="an2"> Ever green foliage</label><br>
+
      </form>  
-     <h1>Leight levels</h1>
-     <form >
-       <input type="checkbox" class="an" >
-       <label for="an1"> Full sun</label><br>
-       <input type="checkbox" class="an" >
-       <label for="an2"> Parcial sun</label><br>
-       <input type="checkbox" class="an" >
-       <label for="an3"> Shade</label><br><br>
-     </form>  
-     <h1>Maintenance needs</h1>
-     <form >
-       <input type="checkbox" class="an" >
-       <label for="an1"> low</label><br>
-       <input type="checkbox" class="an" >
-       <label for="an2"> average</label><br>
-       <input type="checkbox" class="an" >
-       <label for="an3"> height</label><br><br>
-     </form>  
-     <h1>Plants Type</h1>
-     <form >
-       <input type="checkbox" class="an">
-       <label for="an1"> Cactus-Succulente</label><br>
-       <input type="checkbox" class="an">
-       <label for="an2"> Roses</label><br>
-       <input type="checkbox" class="an">
-       <label for="an3"> Ornamental grasses</label><br>
-       <input type="checkbox" class="an">
-       <label for="an3"> Bamboos</label><br><br>
-     </form>      
     </div>
-    <input type="submit" id="sub" value="Submit">
-       <button type="button"  onclick="refresh()"> refresh</button>
+    <div>
+    <button type="submit" id="sub" value="Submit" onclick="checkPlants()">submit</button>
+       <button type="button"  onclick="refresh()"> refresh</button> 
+      </div>
+
+     <div id="por1" class="row">
+      <div class="column">
+        <div class="content">
+          <img src="./images/cactus/aenium-vert (1).jpg"  style="width:100%">
+          <h3>Aenium</h3>
+          <p>Origin: Mediterranean coast</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="./images/cactus/agave-americana-panache.jpg" style="width:100%">
+          <h3>Agave</h3>
+          <p>Origin:Mexico</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="./images/cactus/aloe-vera.jpg" style="width:100%">
+          <h3>aloe-vera</h3>
+          <p> Origin:North Africa</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="./images/cactus/crassula.jpg" style="width:100%">
+          <h3>Crassula</h3>
+          <p>Origin:South Africa</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="./images/cactus/portulacaria.jpg" style="width:100%">
+          <h3>Portulacaria</h3>
+          <p>Origin:South Africa</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="./images/cactus/crassula.jpg" style="width:100%">
+          <h3>Crassula</h3>
+          <p>Origin:South Africa</p>
+        </div>
+      </div>
+    <!-- END GRID -->
+    </div>
+   </div>
+   
+    </div>
+    <!------------------------------------------------------------------->
+    <div>
+
+      <div id="por2" class="row">
+        <div class="column">
+          <div class="content">
+            <img src="./images/orchids/243510681_4463410743696988_2637131809599111550_n.jpg" style="width:100%">
+            <h3>Orchid1</h3>
+            <p></p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+          <img src="./images/orchids/243510776_4463410737030322_9010906340902999737_n.jpg" style="width:100%">
+            <h3>Orchid 2</h3>
+            <p></p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+          <img src="./images/orchids/243648410_4463410777030318_8451424195670803560_n.jpg" style="width:100%">
+            <h3>Orchid 3 </h3>
+            <p></p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+          <img src="./images/orchids/244031841_4463410767030319_6710705307281327413_n (1).jpg" style="width:100%">
+            <h3>Orchid 4 </h3>
+            <p></p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+            <img src="./images/orchids/244031841_4463410767030319_6710705307281327413_n.jpg" style="width:100%">
+                <h3>Orchid 5 </h3>
+                <p></p>
+          </div>
+          </div>
+        <div class="column">
+          <div class="content">
+            <img src="./images/orchids/244046440_4463410747030321_2054345075261795634_n.jpg"  style="width:100%">
+                <h3>Orchid 6 </h3>
+                  <p></p>
+          </div>
+        </div>
+      <!-- END GRID -->
+      </div>
      </div>
-</body>
-</html>
+     
+      </div>
+      <!-------------------------------------------------------------->
+      <div>
+
+        <div id="por3" class="row">
+          <div class="column">
+            <div class="content">
+              <img src="./images/" alt="Mountains" style="width:100%">
+              <h3>My Work</h3>
+              <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content">
+            <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
+              <h3>My Work</h3>
+              <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content">
+            <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
+              <h3>My Work</h3>
+              <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content">
+            <img src="/w3images/mountains.jpg" alt="Mountains" style="width:100%">
+              <h3>My Work</h3>
+              <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+            </div>
+          </div>
+        <!-- END GRID -->
+        </div>
+       </div>
+       
+        </div>
+        <!------------------------------------------------>
+        <div>
+
+          <div id="por4" class="row">
+            <div class="column">
+              <div class="content">
+                <img src="/w3images/mountains.jpg" alt="Mountains" style="width:100%">
+                <h3>My Work</h3>
+                <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="content">
+              <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
+                <h3>My Work</h3>
+                <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="content">
+              <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
+                <h3>My Work</h3>
+                <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="content">
+              <img src="/w3images/mountains.jpg" alt="Mountains" style="width:100%">
+                <h3>My Work</h3>
+                <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+              </div>
+            </div>
+          <!-- END GRID -->
+          </div>
+         </div>
+         
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+          <script src="./main.js" ></script>
+         </body>
+         </html>
