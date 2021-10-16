@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<title>Home Page</title>
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="./index.html">Home</a>
+        <a href="./choose your plant.html">Visit our garden</a>
+        <a href="./Gardening Tools.html">Gardening tools</a>
+        <a href="./about us.html">About us</a>
+        <input type="text" placeholder="Search..">
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+
+      </div>
+      
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label><br>
+      <input type="text" placeholder="Enter Email" name="email" required><br>
+      <label for="psw"><b>Password</b></label><br>
+      <input type="password" placeholder="Enter Password" name="psw" required><br>
+      <label for="psw-repeat"><b>Repeat Password</b></label><br>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div> 
+<div class="imgs1">
+  <a target="-blank" href="./images/tools/acc0.jpg">
+  <img class="imgsize" src="./images/tools/acc0.jpg">
+  </a>
+  <div class="price"> 70Dt</div>
+  <div class="inp"><input type="number" id="i1"></div>
+</div>
+<div class="imgs1">
+  <a target="-blank" href="./images/tools/acc2.jpg">
+  <img  class="imgsize" src="./images/tools/acc2.jpg">
+  </a>
+  <div class="price"> 75Dt</div>
+  <div class="inp"><input type="number" id="i2"></div>
+</div>  
+<div class="imgs1">
+  <a target="-blank" href="./images/tools/acc3.jpg">
+  <img  class="imgsize" src="./images/tools/acc3.jpg">
+  </a>
+  <div class="price"> 75Dt</div>
+  <div class="inp"><input type="number" id="i3"></div>
+</div>  
+<div class="imgs1">
+  <a target="-blank" href="./images/tools/accc1.jpg">
+  <img  class="imgsize" src="./images/tools/accc1.jpg">
+  </a>
+  <div class="price"> 20Dt</div>
+  <div class="inp"><input type="number" id="i4"></div>
+</div>  
+<div class="imgs1">
+  <a target="-blank" href="./images/tools/accc2.jpg">
+  <img  class="imgsize" src="./images/tools/accc2.jpg">
+  </a>
+  <div class="price"> 25Dt</div>
+  <div class="inp"><input type="number" id="i5"></div>
+</div>  
+<div class="imgs1">
+  <a target="-blank" href="./images/tools/accc3.jpg">
+  <img  class="imgsize" src="./images/tools/accc3.jpg">
+  </a>
+  <div class="price"> 35Dt</div>
+  <div class="inp"><input type="number" id="i6"></div>
+</div>  
+<div class="imgs1">
+  <a target="-blank" href="./images/tools/acccc.jpg">
+  <img  class="imgsize" src="./images/tools/acccc.jpg">
+  </a>
+  <div class="price"> 75Dt</div>
+  <div class="inp"><input type="number" id="i7"></div>
+</div>  
+<div class="imgs1">
+  <a target="-blank" href="./images/tools/acccc1.jpg">
+  <img  class="imgsize" src="./images/tools/acccc1.jpg">
+  </a>
+  <div class="price"> 75Dt</div>
+  <div class="inp"><input type="number" id="i8"></div>
+</div>  
+<div class="imgs1">
+  <a target="-blank" href="./images/tools/accc2.jpg">
+  <img  class="imgsize" src="./images/tools/accc2.jpg">
+  </a>
+  <div class="price"> 75Dt</div>
+  <div class="inp"><input type="number" id="i9"></div>
+</div>  
+</div>  
+<div>
+<button type="button" class="bt" onclick="sum()">Buy</button>
+<div id ="facture"></div>
+</div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="./main.js" ></script>
+</body>
+</html>

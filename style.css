@@ -1,12 +1,12 @@
 body{
-    background-image: url(./images/backgr.jpg);
+    background-image: url("./images/backgr.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 
 }
 .topnav {
     background-color: rgb(51, 51, 51);
-    overflow: hidden;
+    overflow:hidden;
   }
   
   /* Style the links inside the navigation bar */
@@ -28,14 +28,13 @@ body{
   
   /* Add a color to the active/current link */
   .topnav a.active {
-    background-color: #17b639;
+    
     color: white;
   }
   .topnav input[type=text] {
     float: right;
     padding: 6px;
     border: none;
-    margin-top: 8px;
     margin-right: 16px;
     font-size: 20px;
     font-family: Verdana, Arial, Helvetica, sans-serif;
@@ -130,13 +129,6 @@ input[type=text], input[type=password] {
     color: #f1f1f1;
   }
   
-  /*.close:hover,
-  .close:focus {
-    color: #f44336;
-    cursor: pointer;
-  }
-  
-  /* Clear floats */
   .clearfix::after {
     content: "";
     clear: both;
@@ -156,16 +148,17 @@ input[type=text], input[type=password] {
   padding-right: 50px ;
   padding-top: 50px;
   border-radius: 10%;
+  margin-bottom: 2%;
 }
 
 #p1{
-  float: right;
-  font-family: Verdana, Arial, Helvetica, sans-serif;
-  width: 50%;
-  height: 10%;
-  margin-right: 10px;
-  color: darkgreen;
-  font-size: ;
+  margin-left: 58%;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: rgb(12, 43, 12);
+    font-size: 25px;
+    font-weight: bold;
+    ;
+
 }
 
 
@@ -180,9 +173,7 @@ input[type=text], input[type=password] {
   font-size: 20px;
   font-family: Verdana, Arial, Helvetica, sans-serif; 
 }
-{
-  box-sizing: border-box;
-}
+
 
 body {
   background-color: #f1f1f1;
@@ -196,9 +187,10 @@ body {
   margin: auto;
 }
 
-h1 {
-  font-size: 50px;
-  word-break: break-all;
+h3 {
+  font-size: 20px;
+  text-align: center;
+  font-style: italic;
 }
 
 .row {
@@ -208,7 +200,7 @@ h1 {
 /* Add padding BETWEEN each column (if you want) */
 .row,
 .row > .column {
-  padding: 8px;
+  padding: 25px;
 }
 
 /* Create four equal columns that floats next to each other */
@@ -228,8 +220,75 @@ h1 {
 .content {
   background-color: white;
   padding: 10px;
+  margin-left: 60px;
+  scroll-margin-top: 50px;
+  
 }  
 
+#vid{
+padding-left: 55%;
+margin-top: 3%;
+padding-right: 10%;
+width: max-content;
+max-height: min-content;
+
+}
+li{
+color: rgb(8, 119, 8);
+font-size: 15px;
+font-weight: bold;
+text-align: center;
+}
+
+p{
+  color: rgb(122, 4, 113);
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+
+footer{
+  height: 200px;
+  margin-top: -200px;
+}
+
+.imgs1{
+  float: left;
+  width: 30%;
+  padding: 5px;
+}
+.imgsize{
+  height: 250px;
+  width: 250px;
+}
+.bt{
+  float: right;
+  border: none;
+  margin-right: 16px;
+  font-size: 20px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  cursor:pointer;
+  background-color:rgb(51, 51, 51);
+  color: #f2f2f2
+
+}
+
+.price{
+  color: rgb(15, 65, 15);
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+#facture{
+text-align: center;
+border-color: rgb(0, 0, 0);
+color: rgb(243, 7, 7);
+font-weight: bold;
+
+
+}
 
   /* Change styles for cancel button and signup button on extra small screens */
   @media screen and (max-width: 300px) {
